@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <Cart/>
-
+      <router-view/>
+      <main-tab-bar/>
   </div>
 </template>
 
 <script>
-import Cart from './views/cart/Cart'
-
+import MainTabBar from 'components/contents/mainTabBar/MainTabBar'
 export default {
   name:'app',
   components:{
-    Cart
+    MainTabBar
   }
 }
 </script>
 
 <style>
+@import 'assets/css/base.css';
 
 </style>

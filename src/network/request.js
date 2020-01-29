@@ -8,7 +8,6 @@ export function request(config){
         timeout:5000
     })
 
-
     //请求拦截器
     instance.interceptors.request.use(config =>{
 
@@ -39,5 +38,5 @@ export function request(config){
     })
 
     //3、发送网络请求
-    instance(config)
+    return instance(config)
 }
